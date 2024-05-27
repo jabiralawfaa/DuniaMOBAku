@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth transition">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/favicon.svg" />
+    <title>DuniaMOBAku</title>
+    <link rel="stylesheet" href="output.css" />
+
+    <style>
+      @font-face {
+        font-family: "arcane";
+        src: url("./font/ArcaneNine-eZP1x.ttf") format("opentype");
+      }
+      @font-face {
+        font-family: "modern";
+        src: url("./font/Cartesian-0W5Oo.otf") format("opentype");
+      }
+
+      .arcane {
+        font-family: "arcane";
+      }
+
+      .modern {
+        font-family: "modern";
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #737373;
+        border-radius: 10px;
+        transition: all;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1e1e1e;
+      }
+    </style>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="bg-cyan-600">
+    <nav class="p-5 bg-transparent transition bg-opacity-75 md:flex md:items-center md:justify-between fixed top-0 w-full z-50 text-white navbar modern">
+      <div class="flex justify-between items-center">
+        <span>
+          <img src="img/DuniaMOBAku - dark.svg" alt="" class="dark:hidden h-10 inline cursor-pointer" />
+        </span>
+
+        <span class="md:hidden cursor-pointer text-3xl block mx-2">
+          <ion-icon name="chevron-down-outline" onclick="menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-75 top-[-400px] transition-all ease-in duration-500 md:bg-transparent">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#home" class="text-xl hover:text-primary duration-500">Beranda</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#download" class="text-xl hover:text-primary duration-500">Download Moba</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#tierlist" class="text-xl hover:text-primary duration-500">Tier List</a>
+        </li>
+
+        <button class="bg-primary text-white px-6 py-2 duration-500 mx-4 my-6 md:my-0 rounded-md hover:rounded-full hover:bg-blue-900"><a href="login.html">Login</a></button>
+      </ul>
+    </nav>
+
+    <section class="h-screen relative" id="home">
+      <video autoplay loop muted class="object-cover w-full h-full">
+        <source src="vid/Hero-BG.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <img src="img/DuniaMOBAku - dark.svg" alt="Hero Image" class="w-[50%]" />
+        <h1 class="my-5 text-lg font-bold modern">Website Informasi game MOBA</h1>
+        <div class="flex justify-center">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-whatsapp" class="text-3xl mx-2 text-white hover:text-cyan-500 duration-500"></ion-icon>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-facebook" class="text-3xl mx-2 text-white hover:text-cyan-500 duration-500"></ion-icon>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-instagram" class="text-3xl mx-2 text-white hover:text-cyan-500 duration-500"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-24 bg-dark text-white" id="download">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold uppercase text-white mb-2 text-3xl arcane">Download Moba</h4>
+            <p class="font-medium text-md text-white md:text-lg modern">Menyediakan Tempat Download Game Moba</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="px-4 w-full lg:w-1/3 xl:w-1/5">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 mb-10 text-center self-center">
+              <img src="https://img.utdstc.com/icon/78d/66f/78d66ff1ab1bd23f7fd6d9cdb93854881cb8f0b69e8a301faaf4f4eab058d19e:200" alt="" class="w-full rounded-full px-4 py-4" />
+              <div class="py-8 px-6">
+                <h3 class="block mb-3 font-bold text-xl text-dark truncate dark:text-white">Mobile Legends</h3>
+                <a href="https://westmanga.fun/" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-xl hover:opacity-80">Download MOBA</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 w-full lg:w-1/3 xl:w-1/5">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 mb-10 text-center self-center">
+              <img src="https://img.utdstc.com/icon/cf2/4b6/cf24b690a4537d6070c07d6c9a32e0170baab0e762c74e8fb96963e7674d9087:200" alt="" class="w-full rounded-full px-4 py-4" />
+              <div class="py-8 px-6">
+                <h3 class="block mb-3 font-bold text-xl text-dark truncate dark:text-white">Honor Of Kings</h3>
+                <a href="https://westmanga.fun/" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-xl hover:opacity-80">Download MOBA</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 w-full lg:w-1/3 xl:w-1/5">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 mb-10 text-center self-center">
+              <img src="https://play-lh.googleusercontent.com/ZGYP02w_hO8wlc5I3-TJjNgtnNSeM8Vf8ZfO3u34CbktMk1t6PGAPN5d7znoEiQ6dWc" alt="" class="w-full rounded-full px-4 py-4" />
+              <div class="py-8 px-6">
+                <h3 class="block mb-3 font-bold text-xl text-dark truncate dark:text-white">Wild Rift</h3>
+                <a href="https://westmanga.fun/" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-xl hover:opacity-80">Download MOBA</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 w-full lg:w-1/3 xl:w-1/5">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 mb-10 text-center self-center">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uZwqw_mH72b6dcpZNotvq3FBlrer1bd6t_Yoo6AyoA&s" alt="" class="w-full rounded-full px-4 py-4" />
+              <div class="py-8 px-6">
+                <h3 class="block mb-3 font-bold text-xl text-dark truncate dark:text-white">Jump Assemble</h3>
+                <a href="https://westmanga.fun/" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-xl hover:opacity-80">Download MOBA</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 w-full lg:w-1/3 xl:w-1/5">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 mb-10 text-center self-center">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IvBctVgoz7IAf-88yDH7Bgc7H27ez6yMPKLoUssmVw&s" alt="" class="w-full rounded-full px-4 py-4" />
+              <div class="py-8 px-6">
+                <h3 class="block mb-3 font-bold text-xl text-dark truncate dark:text-white">Onmyoji Arena</h3>
+                <a href="https://westmanga.fun/" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-xl hover:opacity-80">Download MOBA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-24 bg-secondary" id="tierlist">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold uppercase text-white mb-2 text-3xl arcane">Tier List</h4>
+            <p class="font-medium text-md text-white md:text-lg modern">Rekomendasi Hero atau Champion yang cocok untuk masing masing moba</p>
+          </div>
+        </div>
+        <div class="flex justify-center overflow-x-auto">
+          <table class="bg-white rounded-md">
+            <thead>
+              <tr>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200 border-r-4">Game</th>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200">Fighter</th>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200">Mage</th>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200">Marksman</th>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200">Assasin</th>
+                <th class="py-2 px-4 border-b-2 w-1/6 border-gray-200">Support / Tank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border-b border-gray-200 border-r-4">
+                  <img src="https://img.utdstc.com/icon/78d/66f/78d66ff1ab1bd23f7fd6d9cdb93854881cb8f0b69e8a301faaf4f4eab058d19e:200" width="200" alt="Image 1" class="mx-auto rounded-md" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://static.wikia.nocookie.net/mobile-legends/images/2/22/Hero1201-icon.png/revision/latest?cb=20230212040136" width="150" alt="Image 2" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhv03AxNYUxSneSTrc3BsFbX-CVUV-Tp5p9HyQp-WFYQ&s" width="150" alt="Image 3" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5U0r8tsc59PcHvxeRtNe4eu1p495-zla0jlBO7hh7Q&s" width="150" alt="Image 4" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M9F92TTJugQhYAYcDWA_-RpcDzZEvxtudwRUh7_v9w&s" width="150" alt="Image 5" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPh54yWS2egmVtlL_KmmjmkWvLNpNkGY12XBjgYVYG4w&s" width="150" alt="Image 6" class="mx-auto rounded-full" />
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b border-gray-200 border-r-4">
+                  <img src="https://img.utdstc.com/icon/cf2/4b6/cf24b690a4537d6070c07d6c9a32e0170baab0e762c74e8fb96963e7674d9087:200" width="200" alt="Image 1" class="mx-auto rounded-md" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://gaminggblog.com/wp-content/uploads/2023/04/Kai-Hero-Image.png" width="150" alt="Image 2" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://gaminggblog.com/wp-content/uploads/2024/02/Angela-Hero-Image.svg" width="150" alt="Image 3" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSevj_19wkmnDrFYwC0t7JzKTEPzmnpeK8MU5zjcybHR284oiIWNOBbbKGU6Yz2ZbJS7nA&usqp=CAU" width="150" alt="Image 4" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://gaminggblog.com/wp-content/uploads/2023/04/Li-Bai-Hero-Image.png" width="150" alt="Image 5" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://gaminggblog.com/wp-content/uploads/2023/05/Beast-Hero-Image.png" width="150" alt="Image 6" class="mx-auto rounded-full" />
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b border-gray-200 border-r-4">
+                  <img src="https://play-lh.googleusercontent.com/ZGYP02w_hO8wlc5I3-TJjNgtnNSeM8Vf8ZfO3u34CbktMk1t6PGAPN5d7znoEiQ6dWc" width="200" alt="Image 1" class="mx-auto rounded-md" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://pbs.twimg.com/media/FjZZvVqWQAcEIql.png" width="150" alt="Image 2" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57Sg8YdKaXTVNp78ef_MtgBGRsLeLyhb2XXjCe9eOYQ&s" width="150" alt="Image 3" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTib9Fxk9JsPLWSbbZ_rDsz-RWBqRLiAJJicgYHsw-efg&s" width="150" alt="Image 4" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://pbs.twimg.com/media/GLTxFL4XwAA90MQ.jpg" width="150" alt="Image 5" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dP2gqJ5SI8oovnhFRGuz78-pDbRgtAHbcur2FD6QNQ&s" width="150" alt="Image 6" class="mx-auto rounded-full" />
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b border-gray-200 border-r-4">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uZwqw_mH72b6dcpZNotvq3FBlrer1bd6t_Yoo6AyoA&s" width="200" alt="Image 1" class="mx-auto rounded-md" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 2" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 3" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 4" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 5" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 6" class="mx-auto rounded-full" />
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b border-gray-200 border-r-4">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IvBctVgoz7IAf-88yDH7Bgc7H27ez6yMPKLoUssmVw&s" width="200" alt="Image 1" class="mx-auto rounded-md" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 2" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 3" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 4" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 5" class="mx-auto rounded-full" />
+                </td>
+                <td class="py-2 px-4 border-b border-gray-200">
+                  <img src="https://via.placeholder.com/150" width="150" alt="Image 6" class="mx-auto rounded-full" />
+                </td>
+              </tr>
+              <!-- You can add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-dark py-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4 arcane text-white">Hubungi Kami</h2>
+        <form class="w-full max-w-lg mx-auto modern" action="https://formspree.io/f/xjvndlgj" method="POST">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name"> Nama Depan </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name"> Nama Belakang </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password"> Email </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-password"
+                type="email"
+                name="email"
+                placeholder="jane.doe@example.com"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password"> Pesan </label>
+              <textarea
+                class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-password"
+                name="message"
+                placeholder="Tulis pesan Anda di sini..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <button class="shadow bg-primary hover:rounded-full transition-all duration-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Kirim</button>
+            </div>
+            <div class="md:w-2/3"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Elegant Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-1/3 mb-4 md:mb-0">
+            <h2 class="text-lg font-bold mb-2">About Us</h2>
+            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+          </div>
+          <div class="w-full md:w-1/3 mb-4 md:mb-0">
+            <h2 class="text-lg font-bold mb-2">Quick Links</h2>
+            <ul class="text-gray-400">
+              <li><a href="#" class="hover:text-white">Home</a></li>
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Services</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/3">
+            <h2 class="text-lg font-bold mb-2">Follow Us</h2>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 text-center text-gray-500">&copy; 2023 Your Company. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      function menu(el) {
+        let List = document.querySelector("ul");
+        el.classList.toggle("rotate-180");
+        List.classList.toggle("opacity-100");
+        List.classList.toggle("top-0");
+        List.classList.toggle("top-[80px]");
+      }
+
+      // Get the navbar element
+      const navbar = document.querySelector(".navbar");
+
+      // Add event listener for scrolling
+      window.addEventListener("scroll", () => {
+        // Check if the user has scrolled past the top of the page
+        if (window.pageYOffset > 0) {
+          // Change the background color of the navbar to black
+          navbar.classList.add("bg-dark");
+          navbar.classList.add("shadow");
+          navbar.classList.remove("bg-transparent");
+        } else {
+          // Remove the black background color from the navbar
+          navbar.classList.remove("bg-dark");
+          navbar.classList.remove("shadow");
+          navbar.classList.add("bg-transparent");
+        }
+      });
+    </script>
+  </body>
+</html>
